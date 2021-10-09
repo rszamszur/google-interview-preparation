@@ -1,14 +1,14 @@
 # google-interview-preparation
 
 ## Table of Contents
----
-- Algorithmic complexity / Big-O Notation
-    - [Big-O](https://github.com/rszamszur/google-interview-preparation/blob/master/1.Big-O/Big-O.ipynb)
-- Data Structures
+1. Big-O Notation / Algorithmic complexity
+    1. [Definition](https://github.com/rszamszur/google-interview-preparation/blob/master/1.Big-O_Notation/1.Definition.ipynb)
+    2. [Examples](https://github.com/rszamszur/google-interview-preparation/blob/master/1.Big-O_Notation/1.Examples.ipynb)
+2. Data Structures
     - TBC
-- Algorithms
+3. Algorithms
     - TBC
-- Problems
+4. Problems
     - TBC
 - [Useful links](#useful-links)
 - [How to study effectively](#how-to-study-effectively)
