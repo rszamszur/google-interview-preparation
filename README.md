@@ -5,7 +5,8 @@
     1. [Definition](https://github.com/rszamszur/google-interview-preparation/blob/master/1.Big-O_Notation/1.Definition.ipynb)
     2. [Examples](https://github.com/rszamszur/google-interview-preparation/blob/master/1.Big-O_Notation/1.Examples.ipynb)
 2. Data Structures
-    - TBC
+   1. [Arrays](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/1.Arrays)
+   2. [Linked Lists](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/2.Linked_Lists)
 3. Algorithms
     - TBC
 4. Problems
@@ -26,6 +27,7 @@
 ## How to study effectively
 
 - [The Spacing Effect: How to Improve Learning and Maximize Retention](https://fs.blog/2018/12/spacing-effect/)
+- [Pomodoro Technique](https://francescocirillo.com/pages/pomodoro-technique)
 - [Włam się do mózgu](https://altenberg.pl/wlam-sie-do-mozgu-radek-kotarski/) 
 - [myNoise - ambient music](https://mynoise.net/)
 
