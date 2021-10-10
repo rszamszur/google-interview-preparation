@@ -44,18 +44,7 @@ class SinglyLinkedList(object):
 
     def __repr__(self):
         """SinglyLinkedList class __repr__ method."""
-        values = ""
-
-        if self.head:
-            node = self.head
-
-            while node:
-                values += ".push_front({value})".format(
-                    value=repr(node.value)
-                )
-                node = node.next
-
-        return "SinglyLinkedList(){values}".format(values=values)
+        return "SinglyLinkedList()"
 
     def push_front(self, value):
         """Insert item at the head of the list."""
