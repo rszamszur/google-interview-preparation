@@ -70,3 +70,9 @@ def test_empty():
     assert sll.empty()
     sll.push_front(1)
     assert not sll.empty()
+
+
+def test_repr():
+    a = SinglyLinkedList()
+    b = eval(repr(a))
+    assert isinstance(b, SinglyLinkedList)
