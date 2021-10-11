@@ -43,7 +43,8 @@ Head node is the starting node of the linked list, and it contains the reference
 ### Python
 
 1. [Singly Linked List](https://github.com/rszamszur/google-interview-preparation/blob/master/2.Data_Structures/2.Linked_Lists/Python/singly.py)
-2. [Doubly Linked List](https://github.com/rszamszur/google-interview-preparation/blob/master/2.Data_Structures/2.Linked_Lists/Python/doubly.py)
+2. [Singly Linked List (with tail)](https://github.com/rszamszur/google-interview-preparation/blob/master/2.Data_Structures/2.Linked_Lists/Python/singly_tail.py)
+3. [Doubly Linked List](https://github.com/rszamszur/google-interview-preparation/blob/master/2.Data_Structures/2.Linked_Lists/Python/doubly.py)
 
 #### Tests
 
