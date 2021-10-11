@@ -1,10 +1,12 @@
 import pytest
 from singly import SinglyLinkedList
+from singly_tail import SinglyTailLinkedList
 from doubly import DoublyLinkedList
 
 
 @pytest.mark.parametrize("linked_list", [
     SinglyLinkedList,
+    SinglyTailLinkedList,
     DoublyLinkedList,
 ])
 def test_create_read_delete(linked_list):
@@ -41,6 +43,7 @@ def test_create_read_delete(linked_list):
 
 @pytest.mark.parametrize("linked_list", [
     SinglyLinkedList,
+    SinglyTailLinkedList,
     DoublyLinkedList,
 ])
 def test_length(linked_list):
@@ -62,6 +65,7 @@ def test_length(linked_list):
 
 @pytest.mark.parametrize("linked_list", [
     SinglyLinkedList,
+    SinglyTailLinkedList,
     DoublyLinkedList,
 ])
 def test_find(linked_list):
@@ -78,6 +82,7 @@ def test_find(linked_list):
 
 @pytest.mark.parametrize("linked_list", [
     SinglyLinkedList,
+    SinglyTailLinkedList,
     DoublyLinkedList,
 ])
 def test_erase(linked_list):
@@ -103,6 +108,7 @@ def test_erase(linked_list):
 
 @pytest.mark.parametrize("linked_list", [
     SinglyLinkedList,
+    SinglyTailLinkedList,
     DoublyLinkedList,
 ])
 def test_empty(linked_list):
@@ -114,6 +120,7 @@ def test_empty(linked_list):
 
 @pytest.mark.parametrize("linked_list", [
     SinglyLinkedList,
+    SinglyTailLinkedList,
     DoublyLinkedList,
 ])
 def test_repr(linked_list):
