@@ -28,17 +28,15 @@ class SinglyLinkedList(object):
     def __str__(self):
         """SinglyLinkedList class __str__ method."""
         values = ""
+        node = self.head
 
-        if self.head:
-            node = self.head
+        while node:
+            values += str(node)
 
-            while node:
-                values += str(node)
+            if node.next:
+                values += ", "
 
-                if node.next:
-                    values += ", "
-
-                node = node.next
+            node = node.next
 
         return "[{values}]".format(values=values)
 
@@ -66,16 +64,15 @@ class SinglyLinkedList(object):
 
     def push_back(self, value):
         """Insert item at the end of the list."""
-        node = Node(value)
         if self.head:
-            iter_node = self.head
+            node = self.head
 
-            while iter_node.next:
-                iter_node = iter_node.next
+            while node.next:
+                node = node.next
         
-            iter_node.next = node
+            node.next = Node(value)
         else:
-            self.head = node
+            self.head = Node(value)
     
     def top_back(self):
         """Return last item."""
@@ -86,7 +83,7 @@ class SinglyLinkedList(object):
                 node = node.next
 
             return node.value
-    
+
     def pop_back(self):
         """Remove last item."""
         if self.head:
@@ -104,48 +101,43 @@ class SinglyLinkedList(object):
 
     def find(self, value):
         """Return if any item in the list matches provided value."""
-        if self.head:
-            node = self.head
+        node = self.head
 
-            while node:
-                if node.value == value:
-                    return True
+        while node:
+            if node.value == value:
+                return True
 
-                node = node.next
+            node = node.next
 
         return False
     
     def erase(self, value):
         """Remove item with from the list that matches provided value."""
-        if self.head:
-            node = self.head
-            prev = None
+        node = self.head
+        prev = None
 
-            while node:
-                if node.value == value:
-                    if prev:
-                        prev.next = node.next
-                    else:
-                        self.head = node.next
-                    del node
-                    break
+        while node:
+            if node.value == value:
+                if prev:
+                    prev.next = node.next
+                else:
+                    self.head = node.next
+                del node
+                break
 
-                prev = node
-                node = node.next
+            prev = node
+            node = node.next
 
     def length(self):
         """Return length of the list."""
-        if self.head:
-            node = self.head
-            count = 0
+        node = self.head
+        count = 0
 
-            while node:
-                count += 1
-                node = node.next
+        while node:
+            count += 1
+            node = node.next
 
-            return count
-
-        return 0
+        return count
 
     def empty(self):
         """Return if the list is empty."""
