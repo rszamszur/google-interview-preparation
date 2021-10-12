@@ -27,7 +27,7 @@ class DoublyLinkedList(object):
         self.head = None
 
     def __str__(self):
-        """DoublyLinkedList class __str__ method."""
+        """DoublyLinkedList class __str__ method. Complexity: O(n)"""
         values = ""
         node = self.head
 
@@ -46,7 +46,7 @@ class DoublyLinkedList(object):
         return "DoublyLinkedList()"
 
     def push_front(self, value):
-        """Insert item at the head of the list."""
+        """Insert item at the head of the list. Complexity: O(1)"""
         node = Node(value)
         if self.head:
             node.next = self.head
@@ -54,12 +54,12 @@ class DoublyLinkedList(object):
         self.head = node
 
     def top_front(self):
-        """Return first item."""
+        """Return first item. Complexity: O(1)"""
         if self.head:
             return self.head.value
 
     def pop_front(self):
-        """Remove first item."""
+        """Remove first item. Complexity: O(1)"""
         if self.head:
             node = self.head.next
             if node:
@@ -68,7 +68,7 @@ class DoublyLinkedList(object):
             self.head = node
 
     def push_back(self, value):
-        """Insert item at the end of the list."""
+        """Insert item at the end of the list. Complexity: O(n)"""
         if self.head:
             node = self.head
 
@@ -81,7 +81,7 @@ class DoublyLinkedList(object):
             self.head = Node(value)
 
     def top_back(self):
-        """Return last item."""
+        """Return last item. Complexity: O(n)"""
         if self.head:
             node = self.head
 
@@ -91,7 +91,7 @@ class DoublyLinkedList(object):
             return node.value
 
     def pop_back(self):
-        """Remove last item."""
+        """Remove last item. Complexity: O(n)"""
         if self.head:
             if not self.head.next:
                 del self.head
@@ -106,7 +106,7 @@ class DoublyLinkedList(object):
                 node.next = None
 
     def find(self, value):
-        """Return if any item in the list matches provided value."""
+        """Return if any item in the list matches value. Complexity: O(n)"""
         node = self.head
 
         while node:
@@ -118,7 +118,7 @@ class DoublyLinkedList(object):
         return False
 
     def erase(self, value):
-        """Remove item with from the list that matches provided value."""
+        """Remove first item that matches value. Complexity: O(n)"""
         node = self.head
 
         while node:
@@ -139,7 +139,7 @@ class DoublyLinkedList(object):
             node = node.next
 
     def length(self):
-        """Return length of the list."""
+        """Return length of the list. Complexity: O(n)"""
         node = self.head
         count = 0
 
@@ -150,5 +150,5 @@ class DoublyLinkedList(object):
         return count
 
     def empty(self):
-        """Return if the list is empty."""
+        """Return if the list is empty. Complexity: O(1)"""
         return not self.head
