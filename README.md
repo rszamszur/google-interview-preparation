@@ -8,6 +8,7 @@
    1. [Arrays](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/1.Arrays)
    2. [Linked Lists](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/2.Linked_Lists)
    3. [Stack](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/3.Stack)
+   4. [Queue](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/4.Queue)
 3. Algorithms
     - TBC
 4. Problems
