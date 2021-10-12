@@ -27,18 +27,18 @@ class LinkedListStack(object):
 
     def __str__(self):
         """LinkedListStack class __str__ method. Complexity: O(n)"""
-        stacks = ""
+        stack = ""
         node = self._top
 
         while node:
-            stacks += str(node)
+            stack += str(node)
 
             if node.next:
-                stacks += "\n"
+                stack += "\n"
 
             node = node.next
 
-        return "Top-> {stacks}".format(stacks=stacks)
+        return "Top-> {stack}".format(stack=stack)
 
     def __repr__(self):
         """LinkedListStack class __repr__ method."""

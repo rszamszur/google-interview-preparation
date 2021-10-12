@@ -11,14 +11,14 @@ class ArrayStack(object):
 
     def __str__(self):
         """ArrayStack class __str__ method. Complexity: O(n)"""
-        stacks = ""
+        stack = ""
 
         for item in self._stack:
-            stacks += str(item)
-            stacks += "\n"
+            stack += str(item)
+            stack += "\n"
 
-        stacks.strip()
-        return "Top-> {stacks}".format(stacks=stacks)
+        stack.strip()
+        return "Top-> {stack}".format(stack=stack)
 
     def __repr__(self):
         """ArrayStack class __repr__ method."""
