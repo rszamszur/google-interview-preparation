@@ -7,6 +7,7 @@
 2. Data Structures
    1. [Arrays](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/1.Arrays)
    2. [Linked Lists](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/2.Linked_Lists)
+   3. [Stack](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/3.Stack)
 3. Algorithms
     - TBC
 4. Problems
@@ -35,4 +36,5 @@
 
 - [coding-interview-university](https://github.com/jwasham/coding-interview-university)
 - [interactive-coding-challenges](https://github.com/donnemartin/interactive-coding-challenges)
+- [algorithms](https://github.com/keon/algorithms)
 
