@@ -6,7 +6,7 @@ A stack is a linear data structure that stores items in a **Last-In/First-Out** 
 The fundamental operations on a stack are **push**, which is equivalent to an insert, and **pop**, which deletes the most recently inserted element. The most recently inserted element can be examined prior to performing a pop by use of the **top** routine.
 
 ![stack](https://www.atnyla.com/library/images-tutorials/stack-data-structure-Slide1.PNG)
-
+![stack operations](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
 ## Time complexity
 
 Each stack operation is **O(1)**: Push, Pop, Top, Empty.
