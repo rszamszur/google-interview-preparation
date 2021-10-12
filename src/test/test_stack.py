@@ -1,6 +1,6 @@
 import pytest
-from stack_array import ArrayStack
-from stack_linked_list import LinkedListStack
+from dsa.stack.stack_array import ArrayStack
+from dsa.stack.stack_linked_list import LinkedListStack
 
 
 @pytest.mark.parametrize("stack", [

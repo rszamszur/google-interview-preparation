@@ -1,7 +1,7 @@
 import pytest
-from singly import SinglyLinkedList
-from singly_tail import SinglyTailLinkedList
-from doubly import DoublyLinkedList
+from dsa.linkedlist.singly import SinglyLinkedList
+from dsa.linkedlist.singly_tail import SinglyTailLinkedList
+from dsa.linkedlist.doubly import DoublyLinkedList
 
 
 @pytest.mark.parametrize("linked_list", [

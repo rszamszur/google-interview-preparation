@@ -1,6 +1,6 @@
 import pytest
-from queue_array import ArrayQueue
-from queue_linked_list import LinkedListQueue
+from dsa.queue.queue_array import ArrayQueue
+from dsa.queue.queue_linked_list import LinkedListQueue
 
 
 @pytest.mark.parametrize("queue", [

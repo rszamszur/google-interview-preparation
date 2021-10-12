@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "dsa"
+version = "0.1.0"
+description = "Data Structures and Algorithms"
+authors = ["Radosław Szamszur <radoslawszamszur@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "~6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
