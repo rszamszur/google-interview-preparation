@@ -1,18 +1,19 @@
 # google-interview-preparation
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rszamszur/google-interview-preparation/HEAD)
 
 ## Table of Contents
 1. Big-O Notation / Algorithmic complexity
     1. [Definition](https://github.com/rszamszur/google-interview-preparation/blob/master/1.Big-O_Notation/1.Definition.ipynb)
     2. [Examples](https://github.com/rszamszur/google-interview-preparation/blob/master/1.Big-O_Notation/1.Examples.ipynb)
 2. Data Structures
-   1. [Arrays](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/1.Arrays)
-   2. [Linked Lists](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/2.Linked_Lists)
-   3. [Stack](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/3.Stack)
-   4. [Queue](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/4.Queue)
+   1. [Arrays](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/1.Array.ipynb)
+   2. [Linked Lists](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/2.Linked_List.ipynb)
+   3. [Stack](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/3.Stack.ipynb)
+   4. [Queue](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/4.Queue.ipynb)
 3. Algorithms
     - TBC
-4. Problems
-    - TBC
+4. Implementations
+    - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src)
 - [Useful links](#useful-links)
 - [How to study effectively](#how-to-study-effectively)
 - [Similar repos](#similar-repos)
@@ -20,6 +21,8 @@
 
 ## Useful links
 
+- [MIT Electrical Engineering and Computer Science free courses](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/)
+- [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 - [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/runestone/books/published/pythonds/index.html)
 - [Algorithms Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 - [VISUALIZE PYTHON CODE EXECUTION](https://pythontutor.com/)
