@@ -24,7 +24,6 @@ class LinkedListStack(object):
     def __init__(self):
         """Initialize LinkedListStack class object instance."""
         self._top = None
-        self._iter = None
 
     def __str__(self):
         """LinkedListStack class __str__ method. Complexity: O(n)"""
