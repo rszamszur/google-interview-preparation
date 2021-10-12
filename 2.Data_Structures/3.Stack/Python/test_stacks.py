@@ -8,7 +8,7 @@ from stack_linked_list import LinkedListStack
     LinkedListStack()
 ])
 def test_stacks(stack):
-    assert stack.empty() is True
+    assert stack.empty()
     with pytest.raises(IndexError):
         stack.pop()
         stack.top()
@@ -34,7 +34,7 @@ def test_stacks(stack):
     stack.pop()
     assert stack.top() == 1
     stack.pop()
-    assert stack.empty() is True
+    assert stack.empty()
 
     obj = eval(repr(stack))
     stack_type = type(stack)
