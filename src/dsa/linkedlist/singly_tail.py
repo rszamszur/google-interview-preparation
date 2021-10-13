@@ -25,17 +25,17 @@ class SinglyTailLinkedList(object):
     """SinglyTailLinkedList class implementation."""
     # Why slots: https://docs.python.org/3/reference/datamodel.html#slots
     # TLDR: 1. faster attribute access. 2. space savings in memory.
-    __slots__ = ("head", "tail")
+    __slots__ = ("_head", "_tail")
 
     def __init__(self):
         """Initialize SinglyTailLinkedList class object instance."""
-        self.head = None
-        self.tail = None
+        self._head = None
+        self._tail = None
 
     def __str__(self):
         """SinglyTailLinkedList class __str__ method. Complexity: O(n)"""
         values = ""
-        node = self.head
+        node = self._head
 
         while node:
             values += str(node)
@@ -54,62 +54,62 @@ class SinglyTailLinkedList(object):
     def push_front(self, value):
         """Insert item at the head of the list. Complexity: O(1)"""
         node = Node(value)
-        node.next = self.head
-        self.head = node
-        if not self.tail:
-            self.tail = node
+        node.next = self._head
+        self._head = node
+        if not self._tail:
+            self._tail = node
 
     def top_front(self):
         """Return first item. Complexity: O(1)"""
-        if self.head:
-            return self.head.value
+        if self._head:
+            return self._head.value
 
     def pop_front(self):
         """Remove first item. Complexity: O(1)"""
-        if self.head:
-            node = self.head.next
+        if self._head:
+            node = self._head.next
 
-            if self.tail == self.head:
-                self.tail = node
+            if self._tail == self._head:
+                self._tail = node
 
-            del self.head
-            self.head = node
+            del self._head
+            self._head = node
 
     def push_back(self, value):
         """Insert item at the end of the list. Complexity: O(1)"""
         node = Node(value)
-        if self.tail:
-            self.tail.next = node
+        if self._tail:
+            self._tail.next = node
 
-        self.tail = node
-        if not self.head:
-            self.head = node
+        self._tail = node
+        if not self._head:
+            self._head = node
 
     def top_back(self):
         """Return last item."""
-        if self.tail:
-            return self.tail.value
+        if self._tail:
+            return self._tail.value
 
     def pop_back(self):
         """Remove last item. Complexity: O(n)"""
-        if self.head:
-            if not self.head.next:
-                del self.head
-                self.head = None
-                self.tail = None
+        if self._head:
+            if not self._head.next:
+                del self._head
+                self._head = None
+                self._tail = None
             else:
-                node = self.head
+                node = self._head
 
                 while node.next.next:
                     node = node.next
 
                 del node.next
                 node.next = None
-                self.tail = node
+                self._tail = node
 
     def find(self, value):
         """Return if any item in the list matches value. Complexity: O(n)"""
-        node = self.head
+        node = self._head
 
         while node:
             if node.value == value:
@@ -121,7 +121,7 @@ class SinglyTailLinkedList(object):
 
     def erase(self, value):
         """Remove first item that matches value. Complexity: O(n)"""
-        node = self.head
+        node = self._head
         prev = None
 
         while node:
@@ -129,9 +129,9 @@ class SinglyTailLinkedList(object):
                 if prev:
                     prev.next = node.next
                 else:
-                    self.head = node.next
+                    self._head = node.next
                 if not node.next:
-                    self.tail = prev
+                    self._tail = prev
                 del node
                 break
 
@@ -140,7 +140,7 @@ class SinglyTailLinkedList(object):
 
     def length(self):
         """Return length of the list. Complexity: O(n)"""
-        node = self.head
+        node = self._head
         count = 0
 
         while node:
@@ -151,4 +151,4 @@ class SinglyTailLinkedList(object):
 
     def empty(self):
         """Return if the list is empty. Complexity: O(1)"""
-        return not self.head
+        return not self._head

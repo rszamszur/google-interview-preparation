@@ -26,16 +26,16 @@ class DoublyLinkedList(object):
     """DoublyLinkedList class implementation."""
     # Why slots: https://docs.python.org/3/reference/datamodel.html#slots
     # TLDR: 1. faster attribute access. 2. space savings in memory.
-    __slots__ = ("head")
+    __slots__ = ("_head")
 
     def __init__(self):
         """Initialize DoublyLinkedList class object instance."""
-        self.head = None
+        self._head = None
 
     def __str__(self):
         """DoublyLinkedList class __str__ method. Complexity: O(n)"""
         values = ""
-        node = self.head
+        node = self._head
 
         while node:
             values += str(node)
@@ -54,29 +54,29 @@ class DoublyLinkedList(object):
     def push_front(self, value):
         """Insert item at the head of the list. Complexity: O(1)"""
         node = Node(value)
-        if self.head:
-            node.next = self.head
-            self.head.prev = node
-        self.head = node
+        if self._head:
+            node.next = self._head
+            self._head.prev = node
+        self._head = node
 
     def top_front(self):
         """Return first item. Complexity: O(1)"""
-        if self.head:
-            return self.head.value
+        if self._head:
+            return self._head.value
 
     def pop_front(self):
         """Remove first item. Complexity: O(1)"""
-        if self.head:
-            node = self.head.next
+        if self._head:
+            node = self._head.next
             if node:
                 node.prev = None
-            del self.head
-            self.head = node
+            del self._head
+            self._head = node
 
     def push_back(self, value):
         """Insert item at the end of the list. Complexity: O(n)"""
-        if self.head:
-            node = self.head
+        if self._head:
+            node = self._head
 
             while node.next:
                 node = node.next
@@ -84,12 +84,12 @@ class DoublyLinkedList(object):
             node.next = Node(value)
             node.next.prev = node
         else:
-            self.head = Node(value)
+            self._head = Node(value)
 
     def top_back(self):
         """Return last item. Complexity: O(n)"""
-        if self.head:
-            node = self.head
+        if self._head:
+            node = self._head
 
             while node.next:
                 node = node.next
@@ -98,12 +98,12 @@ class DoublyLinkedList(object):
 
     def pop_back(self):
         """Remove last item. Complexity: O(n)"""
-        if self.head:
-            if not self.head.next:
-                del self.head
-                self.head = None
+        if self._head:
+            if not self._head.next:
+                del self._head
+                self._head = None
             else:
-                node = self.head
+                node = self._head
 
                 while node.next.next:
                     node = node.next
@@ -113,7 +113,7 @@ class DoublyLinkedList(object):
 
     def find(self, value):
         """Return if any item in the list matches value. Complexity: O(n)"""
-        node = self.head
+        node = self._head
 
         while node:
             if node.value == value:
@@ -125,7 +125,7 @@ class DoublyLinkedList(object):
 
     def erase(self, value):
         """Remove first item that matches value. Complexity: O(n)"""
-        node = self.head
+        node = self._head
 
         while node:
             if node.value == value:
@@ -135,10 +135,10 @@ class DoublyLinkedList(object):
                         node.prev.next = node.next
                         node.next.prev = node.prev
                 else:
-                    self.head = None
+                    self._head = None
                     if node.next:
-                        self.head = node.next
-                        self.head.prev = None
+                        self._head = node.next
+                        self._head.prev = None
                 del node
                 break
 
@@ -146,7 +146,7 @@ class DoublyLinkedList(object):
 
     def length(self):
         """Return length of the list. Complexity: O(n)"""
-        node = self.head
+        node = self._head
         count = 0
 
         while node:
@@ -157,4 +157,4 @@ class DoublyLinkedList(object):
 
     def empty(self):
         """Return if the list is empty. Complexity: O(1)"""
-        return not self.head
+        return not self._head
