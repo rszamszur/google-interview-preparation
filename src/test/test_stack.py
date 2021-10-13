@@ -39,4 +39,3 @@ def test_stacks(stack):
     obj = eval(repr(stack))
     stack_type = type(stack)
     assert isinstance(stack, stack_type) == isinstance(obj, stack_type)
-    assert stack.__dict__ == obj.__dict__

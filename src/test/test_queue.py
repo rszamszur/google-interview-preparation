@@ -28,4 +28,3 @@ def test_queue(queue):
     obj = eval(repr(queue))
     queue_type = type(queue)
     assert isinstance(queue, queue_type) == isinstance(obj, queue_type)
-    assert queue.__dict__ == obj.__dict__
