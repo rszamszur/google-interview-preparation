@@ -13,6 +13,9 @@
 
 class ArrayStack(object):
     """Stack implementation based on array"""
+    # Why slots: https://docs.python.org/3/reference/datamodel.html#slots
+    # TLDR: 1. faster attribute access. 2. space savings in memory.
+    __slots__ = ("_stack", "_size")
 
     def __init__(self, size: int):
         """Initialize ArrayStack class object instance."""

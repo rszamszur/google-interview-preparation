@@ -3,6 +3,9 @@
 
 class Node(object):
     """Node class implementation for linked list."""
+    # Why slots: https://docs.python.org/3/reference/datamodel.html#slots
+    # TLDR: 1. faster attribute access. 2. space savings in memory.
+    __slots__ = ("value", "next")
     
     def __init__(self, value):
         """Initialize Node class object instance."""
@@ -20,6 +23,9 @@ class Node(object):
 
 class SinglyLinkedList(object):
     """SinglyLinkedList class implementation."""
+    # Why slots: https://docs.python.org/3/reference/datamodel.html#slots
+    # TLDR: 1. faster attribute access. 2. space savings in memory.
+    __slots__ = ("head")
     
     def __init__(self):
         """Initialize SinglyLinkedList class object instance."""

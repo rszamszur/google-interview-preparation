@@ -14,6 +14,9 @@ from collections import deque
 
 class ArrayQueue(object):
     """Stack implementation based on collections.deque."""
+    # Why slots: https://docs.python.org/3/reference/datamodel.html#slots
+    # TLDR: 1. faster attribute access. 2. space savings in memory.
+    __slots__ = ("_queue", "_size")
 
     def __init__(self, size: int):
         """Initialize ArrayQueue class object instance."""
