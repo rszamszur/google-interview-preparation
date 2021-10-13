@@ -8,12 +8,16 @@
 2. Data Structures
    1. [Arrays](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/1.Array.ipynb)
    2. [Linked Lists](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/2.Linked_List.ipynb)
+      - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/linkedlist)
    3. [Stack](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/3.Stack.ipynb)
+      - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/stack)
    4. [Queue](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/4.Queue.ipynb)
+      - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/queue)
+   5. Hash Table (TBC)
 3. Algorithms
-    - TBC
-4. Implementations
-    - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src)
+   - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/algorithms)
+4. Problems
+   - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/problems)
 - [Useful links](#useful-links)
 - [How to study effectively](#how-to-study-effectively)
 - [Similar repos](#similar-repos)
@@ -33,6 +37,7 @@
 
 - [The Spacing Effect: How to Improve Learning and Maximize Retention](https://fs.blog/2018/12/spacing-effect/)
 - [Pomodoro Technique](https://francescocirillo.com/pages/pomodoro-technique)
+- [Learning How to Learn: Powerful mental tools to help you master tough subjects](https://www.coursera.org/learn/learning-how-to-learn#syllabus)
 - [Włam się do mózgu](https://altenberg.pl/wlam-sie-do-mozgu-radek-kotarski/) 
 - [myNoise - ambient music](https://mynoise.net/)
 
