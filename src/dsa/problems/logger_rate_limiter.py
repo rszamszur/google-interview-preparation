@@ -4,7 +4,7 @@ class Logger(object):
     def __init__(self):
         self._at = {}
 
-    def shouldPrintMessage(self, timestamp, message):
+    def should_print_message(self, timestamp, message):
         """
         Time complexity: O(1)
         Space complexity: O(n)

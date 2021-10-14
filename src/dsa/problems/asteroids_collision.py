@@ -11,7 +11,7 @@ class Solution(object):
 
         return -1
 
-    def asteroidCollision(self, asteroids):
+    def asteroid_collision(self, asteroids):
         """
         Time complexity: O(n)
         Space complexity: O(1)

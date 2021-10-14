@@ -14,4 +14,4 @@ logger = Logger()
     (11, "foo", True)
 ])
 def test_logger_rate_limiter(timestamp, message, expected):
-    assert logger.shouldPrintMessage(timestamp, message) == expected
+    assert logger.should_print_message(timestamp, message) == expected

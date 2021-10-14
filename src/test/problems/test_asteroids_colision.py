@@ -15,4 +15,4 @@ solution = Solution()
     ([50, 2, 3, 4, 6, 7, - 5, -10], [50]),
 ])
 def test_asteroids_collision(asteroids, expected):
-    assert solution.asteroidCollision(asteroids) == expected
+    assert solution.asteroid_collision(asteroids) == expected
