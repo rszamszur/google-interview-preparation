@@ -1,6 +1,8 @@
-def valid_parenthesis(s):
-    """https://leetcode.com/problems/valid-parentheses/
+"""https://leetcode.com/problems/valid-parentheses/"""
 
+
+def valid_parenthesis(s):
+    """
     Time complexity: O(n)
     Space complexity: O(n)
 

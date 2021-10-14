@@ -1,3 +1,6 @@
+"""https://leetcode.com/problems/asteroid-collision"""
+
+
 class Solution(object):
     __slots__ = ()
 
@@ -9,8 +12,7 @@ class Solution(object):
         return -1
 
     def asteroidCollision(self, asteroids):
-        """https://leetcode.com/problems/asteroid-collision
-
+        """
         Time complexity: O(n)
         Space complexity: O(1)
 

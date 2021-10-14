@@ -1,6 +1,8 @@
-def two_sum(nums, target):
-    """https://leetcode.com/problems/two-sum/
+"""https://leetcode.com/problems/two-sum/"""
 
+
+def two_sum(nums, target):
+    """
     Time complexity: O(n)
     Space complexity: O(n)
 
