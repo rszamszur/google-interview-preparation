@@ -1,12 +1,16 @@
-# https://leetcode.com/problems/two-sum/
-
-
 def two_sum(nums, target):
-    """Complexity: O(n)
+    """https://leetcode.com/problems/two-sum/
+
+    Time complexity: O(n)
+    Space complexity: O(n)
 
     Store every element of the nums array in the map and check if there is an
     element in the dictionary that with the element at current index sums up
     to target.
+
+    :type nums: List[int]
+    :type target: int
+    :rtype: List[int]
     """
     nums_map = dict(
         zip(nums, range(len(nums)))
@@ -23,7 +27,15 @@ def two_sum(nums, target):
 
 
 def two_sum_brute_force(nums, target):
-    """Complexity: O(n^2)"""
+    """Most obvious yet time complex solution.
+
+    Time complexity: O(n^2)
+    Space complexity: O(1)
+
+    :type nums: List[int]
+    :type target: int
+    :rtype: List[int]
+    """
     for i, n1 in enumerate(nums):
         for j, n2 in enumerate(nums):
             if i == j:

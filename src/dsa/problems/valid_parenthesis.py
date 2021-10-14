@@ -1,8 +1,12 @@
-# https://leetcode.com/problems/valid-parentheses/
-
-
 def valid_parenthesis(s):
-    """Time complexity: O(n)"""
+    """https://leetcode.com/problems/valid-parentheses/
+
+    Time complexity: O(n)
+    Space complexity: O(n)
+
+    :type s: str
+    :rtype: bool
+    """
     stack = []
     brackets = {
         "{": "}",
