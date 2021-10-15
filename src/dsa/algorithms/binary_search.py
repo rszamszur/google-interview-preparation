@@ -6,6 +6,17 @@ Time complexity: O(log(n))
 
 
 def binary_search(array, query):
+    """
+    Time complexity: O(log(n))
+    Space complexity: O(1)
+
+    Args:
+        array(List[int]): sorted array
+        query(int): value to find
+
+    Returns:
+        int value if found else None
+    """
     lo = 0
     hi = len(array) - 1
 
@@ -25,6 +36,19 @@ def binary_search(array, query):
 
 
 def binary_search_recursive(array, query, start=None, end=None):
+    """
+    Time complexity: O(log(n))
+    Space complexity: O(1)
+
+    Args:
+        array(List[int]): sorted array
+        query(int): value to find
+        start(int): current start index
+        end(int): current end index
+
+    Returns:
+        int value if found else None
+    """
     if not start:
         start = 0
     if not end:
