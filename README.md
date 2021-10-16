@@ -7,7 +7,7 @@
     2. [Examples](https://github.com/rszamszur/google-interview-preparation/blob/master/1.Big-O_Notation/1.Examples.ipynb)
 2. Data Structures
    1. [Arrays](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/1.Array.ipynb)
-   2. [Linked Lists](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/2.Linked_List.ipynb)
+   2. [Linked Lists](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/2.LinkedList.ipynb)
       - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/linkedlist)
    3. [Stack](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/3.Stack.ipynb)
       - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/stack)
