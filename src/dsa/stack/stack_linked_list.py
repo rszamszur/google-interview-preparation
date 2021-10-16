@@ -28,7 +28,7 @@ class LinkedListStack(object):
 
     def __repr__(self):
         """LinkedListStack class __repr__ method."""
-        return "LinkedListStack()"
+        return "{name}()".format(name=self.__class__.__name__)
 
     def empty(self):
         """Return if the stack is empty. Complexity: O(1)"""

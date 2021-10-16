@@ -29,7 +29,7 @@ class LinkedListQueue(object):
 
     def __repr__(self):
         """LinkedListQueue class __repr__ method."""
-        return "LinkedListQueue()"
+        return "{name}()".format(name=self.__class__.__name__)
 
     def empty(self):
         """Return if the queue is empty. Complexity: O(1)"""

@@ -40,7 +40,7 @@ class DoublyLinkedList(object):
 
     def __repr__(self):
         """DoublyLinkedList class __repr__ method."""
-        return "DoublyLinkedList()"
+        return "{name}()".format(name=self.__class__.__name__)
 
     def push_front(self, value):
         """Insert item at the head of the list. Complexity: O(1)"""

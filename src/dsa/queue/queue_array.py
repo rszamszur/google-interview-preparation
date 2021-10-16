@@ -36,7 +36,10 @@ class ArrayQueue(object):
 
     def __repr__(self):
         """ArrayQueue class __repr__ method."""
-        return "ArrayQueue({size})".format(size=self._size)
+        return "{name}({size})".format(
+            name=self.__class__.__name__,
+            size=self._size,
+        )
 
     def empty(self):
         """Return if the queue is empty. Complexity: O(1)"""

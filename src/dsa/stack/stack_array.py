@@ -35,7 +35,10 @@ class ArrayStack(object):
 
     def __repr__(self):
         """ArrayStack class __repr__ method."""
-        return "ArrayStack({size})".format(size=self._size)
+        return "{name}({size})".format(
+            name=self.__class__.__name__,
+            size=self._size,
+        )
 
     def empty(self):
         """Return if the stack is empty. Complexity: O(1)"""
