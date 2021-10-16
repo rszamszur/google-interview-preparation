@@ -1,24 +1,4 @@
-#! /usr/bin/env python
-
-
-class Node(object):
-    """Node class implementation for linked list."""
-    # Why slots: https://docs.python.org/3/reference/datamodel.html#slots
-    # TLDR: 1. faster attribute access. 2. space savings in memory.
-    __slots__ = ("value", "next")
-
-    def __init__(self, value):
-        """Initialize Node class object instance."""
-        self.value = value
-        self.next = None
-
-    def __str__(self):
-        """Node class __str__ method."""
-        return str(self.value)
-
-    def __repr__(self):
-        """Node class __repr__ method."""
-        return "Node({value})".format(value=self.value)
+from dsa.linkedlist.node import Node
 
 
 class LinkedListQueue(object):

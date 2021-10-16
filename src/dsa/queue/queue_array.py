@@ -1,14 +1,15 @@
-#! /usr/bin/env python
-# In order to have O(1) time complexity of all methods we need to use
-# collections.deque class
-#
-# NOTE! Although Python lists are implemented with standard "arrays" under the
-# hood, its time complexity is the same as for standard array. The largest
-# costs come from growing beyond the current allocation size
-# (because everything must move), or from inserting or deleting somewhere near
-# the beginning (because everything after that must move). If you need to
-# add/remove at both ends, consider using a collections.deque instead.
-# Wiki: https://wiki.python.org/moin/TimeComplexity
+"""
+In order to have O(1) time complexity of all methods we need to use
+collections.deque class.
+
+NOTE! Although Python lists are implemented with standard "arrays" under the
+hood, its time complexity is the same as for standard array. The largest
+costs come from growing beyond the current allocation size
+(because everything must move), or from inserting or deleting somewhere near
+the beginning (because everything after that must move). If you need to
+add/remove at both ends, consider using a collections.deque instead.
+Wiki: https://wiki.python.org/moin/TimeComplexity
+"""
 from collections import deque
 
 
