@@ -45,7 +45,7 @@ class LinkedListQueue(object):
 
             node = node.next
 
-        return "Newest -> {queue} <- Oldest".format(queue=queue)
+        return "Newest -> {queue}".format(queue=queue)
 
     def __repr__(self):
         """LinkedListQueue class __repr__ method."""

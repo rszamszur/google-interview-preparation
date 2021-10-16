@@ -31,8 +31,7 @@ class ArrayQueue(object):
             queue += str(item)
             queue += "\n"
 
-        queue.strip()
-        return "Newest -> {queue} <- Oldest".format(queue=queue)
+        return "Newest -> {queue}".format(queue=queue).rstrip("\n")
 
     def __repr__(self):
         """ArrayQueue class __repr__ method."""

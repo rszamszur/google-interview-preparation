@@ -30,8 +30,7 @@ class ArrayStack(object):
             stack += str(item)
             stack += "\n"
 
-        stack.strip()
-        return "Top-> {stack}".format(stack=stack)
+        return "Top-> {stack}".format(stack=stack).rstrip("\n")
 
     def __repr__(self):
         """ArrayStack class __repr__ method."""
