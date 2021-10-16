@@ -6,14 +6,16 @@
     1. [Definition](https://github.com/rszamszur/google-interview-preparation/blob/master/1.Big-O_Notation/1.Definition.ipynb)
     2. [Examples](https://github.com/rszamszur/google-interview-preparation/blob/master/1.Big-O_Notation/1.Examples.ipynb)
 2. Data Structures
-   1. [Arrays](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/1.Array.ipynb)
-   2. [Linked Lists](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/2.LinkedList.ipynb)
+   1. [Array](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/1.Array.ipynb)
+   2. [Linked List](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/2.LinkedList.ipynb)
       - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/linkedlist)
    3. [Stack](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/3.Stack.ipynb)
       - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/stack)
    4. [Queue](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/4.Queue.ipynb)
       - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/queue)
-   5. Hash Table (TBC)
+   5. [Hash Table](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/5.HashTable.ipynb)
+   6. Trees: TBC
+   7. Graphs: TBC
 3. Algorithms
    - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/algorithms)
 4. Problems
