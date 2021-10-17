@@ -1,6 +1,8 @@
 # google-interview-preparation
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rszamszur/google-interview-preparation/HEAD)
 
+Note! Work in progress. I'm constantly adding new notes, and code implementations of data structures, algorithms and problems.
+
 ## Table of Contents
 1. Big-O Notation / Algorithmic complexity
     1. [Definition](https://github.com/rszamszur/google-interview-preparation/blob/master/1.Big-O_Notation/1.Definition.ipynb)
@@ -13,8 +15,16 @@
       - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/stack)
    4. [Queue](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/4.Queue.ipynb)
       - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/queue)
-   5. [Hash Table](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/5.HashTable.ipynb)
-   6. Trees: TBC
+   5. [Hash Table (TBC)](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/5.HashTable.ipynb)
+      - [Python (TBC)](https://github.com/rszamszur/google-interview-preparation/blob/master/src/dsa/hashtable) 
+   6. Trees (TBC)
+      - Traversal (TBC)
+        - [Python](https://github.com/rszamszur/google-interview-preparation/blob/master/src/dsa/tree/traversal)
+      - [Heap](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/6.Heap.ipynb)
+        - [Python](https://github.com/rszamszur/google-interview-preparation/blob/master/src/dsa/tree/heap.py)
+      - BST (TBC)
+      - Red Black (TBC)
+      - AVL (TBC)
    7. Graphs: TBC
 3. Algorithms
    - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/algorithms)
@@ -31,7 +41,7 @@
 - [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 - [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/runestone/books/published/pythonds/index.html)
 - [Algorithms Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
-- [VISUALIZE PYTHON CODE EXECUTION](https://pythontutor.com/)
+- [Visualize Python code execution](https://pythontutor.com/)
 - [C for python programmers](https://realpython.com/c-for-python-programmers/)
 - [interactive-coding-challenges](https://github.com/donnemartin/interactive-coding-challenges)
 
@@ -48,4 +58,4 @@
 - [coding-interview-university](https://github.com/jwasham/coding-interview-university)
 - [interactive-coding-challenges](https://github.com/donnemartin/interactive-coding-challenges)
 - [algorithms](https://github.com/keon/algorithms)
-
+- [google-interview-preparation-problems](https://github.com/mgechev/google-interview-preparation-problems)
