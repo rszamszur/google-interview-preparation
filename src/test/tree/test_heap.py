@@ -132,3 +132,9 @@ def test_postorder():
     postorder = [1, 8, 9, 14, 7, 2, 10, 16]
     for i, item in enumerate(heap.postorder()):
         assert item == postorder[i]
+
+
+def test_eval():
+    heap = MaxHeap([1, 2, 3, 4, 5, 6])
+    heap_eval = eval(repr(heap))
+    assert heap.heap == heap_eval.heap
