@@ -55,7 +55,8 @@ Note! Work in progress. I'm constantly adding new notes, and code implementation
 
 ## Similar repos
 
-- [coding-interview-university](https://github.com/jwasham/coding-interview-university)
-- [interactive-coding-challenges](https://github.com/donnemartin/interactive-coding-challenges)
-- [algorithms](https://github.com/keon/algorithms)
-- [google-interview-preparation-problems](https://github.com/mgechev/google-interview-preparation-problems)
+- [jwasham/coding-interview-university](https://github.com/jwasham/coding-interview-university)
+- [donnemartin/interactive-coding-challenges](https://github.com/donnemartin/interactive-coding-challenges)
+- [keon/algorithms](https://github.com/keon/algorithms)
+- [mgechev/google-interview-preparation-problems](https://github.com/mgechev/google-interview-preparation-problems)
+- [Olshansk/interview](https://github.com/Olshansk/interview)
