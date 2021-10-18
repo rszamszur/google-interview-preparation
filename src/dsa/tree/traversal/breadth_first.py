@@ -11,19 +11,18 @@ class BreadthFirstBinaryTree(AbstractTreeIterator):
 
     def _order(self, node):
         """Return breadth first nodes for the iterator."""
-        order = [node]
+        order = []
         queue = deque()
         queue.append(node)
 
         while queue:
             node = queue.popleft()
+            order.append(node)
 
             if node.left:
-                order.append(node.left)
                 queue.append(node.left)
 
             if node.right:
-                order.append(node.right)
                 queue.append(node.right)
 
         return order
