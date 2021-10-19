@@ -7,7 +7,7 @@ from dsa.tree.traversal import (
 )
 
 
-class BinarySearchTree(object):
+class BST(object):
     """BinarySearchTree class implementation."""
 
     def __init__(self):
@@ -75,10 +75,13 @@ class BinarySearchTree(object):
         Args:
             key(int): Key to insert.
 
+        Returns
+            BinaryTreeNode: Inserted node.
+
         """
         if not self._root:
             self._root = BinaryTreeNode(key=key, parent=None)
-            return
+            return self._root
 
         node = self._root
         parent = node
@@ -93,8 +96,10 @@ class BinarySearchTree(object):
 
         if key < parent.key:
             parent.left = BinaryTreeNode(key=key, parent=parent)
+            return parent.left
         else:
             parent.right = BinaryTreeNode(key=key, parent=parent)
+            return parent.right
 
     def find(self, key):
         """Find node in BinarySearchTree that matches provided key.
@@ -133,6 +138,9 @@ class BinarySearchTree(object):
         Args:
             key(int): Key to delete.
 
+        Returns
+            BinaryTreeNode: Deleted node.
+
         Raises:
             KeyError: If key to delete doesn't exist.
 
@@ -148,14 +156,13 @@ class BinarySearchTree(object):
             else:
                 self._update_node_parent(node)
 
-            del node
+            return node
         elif node.left and node.right:
-            min_node = self.min(node)
-            node.key = min_node.key
+            successor = self.min(node)
+            node.key, successor.key = successor.key, node.key
+            self._update_node_parent(successor)
 
-            self._update_node_parent(min_node)
-
-            del min_node
+            return successor
         else:
             if node.left:
                 child = node.left
@@ -168,7 +175,7 @@ class BinarySearchTree(object):
                 self._update_node_parent(node, child)
 
             child.parent = node.parent
-            del node
+            return node
 
     def max(self, node=None):
         """Returns maximum value in BinarySearchTree.
