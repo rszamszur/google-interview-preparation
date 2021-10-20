@@ -154,13 +154,19 @@ class BST(object):
             if node == self._root:
                 self._root = None
             else:
-                self._update_node_parent(node)
+                self._update_node_parent(
+                    node=node,
+                    parent=node,
+                )
 
             return node
         elif node.left and node.right:
             successor = self.min(node)
             node.key, successor.key = successor.key, node.key
-            self._update_node_parent(successor)
+            self._update_node_parent(
+                node=successor,
+                parent=successor,
+            )
 
             return successor
         else:
@@ -172,7 +178,11 @@ class BST(object):
             if node == self._root:
                 self._root = child
             else:
-                self._update_node_parent(node, child)
+                self._update_node_parent(
+                    node=node,
+                    parent=node,
+                    value=child,
+                )
 
             child.parent = node.parent
             return node
@@ -272,7 +282,7 @@ class BST(object):
         if self._root:
             return iter(PostorderBinaryTree(self._root))
 
-    def _update_node_parent(self, node, value=None):
+    def _update_node_parent(self, node, parent, value=None):
         """Class utility method for updating node parent with provided value.
 
         Time complexity: O(1)
