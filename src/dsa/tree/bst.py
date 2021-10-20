@@ -293,7 +293,7 @@ class BST(object):
             value(BinaryTreeNode): Value to update with
 
         """
-        if node.parent.left == node:
+        if node.parent.left == parent:
             node.parent.left = value
         else:
             node.parent.right = value
