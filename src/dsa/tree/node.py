@@ -1,3 +1,6 @@
+from reprlib import recursive_repr
+
+
 class TreeNode(object):
     """TreeNode class implementation for Tree data structure."""
 
@@ -9,6 +12,7 @@ class TreeNode(object):
         """Node class __str__ method."""
         return str(self.__dict__)
 
+    @recursive_repr()
     def __repr__(self):
         """Node class __repr__ method."""
         kwargs = []
