@@ -11,7 +11,7 @@ class TreeNode(object):
         self.right = right
 
 
-def is_symmetric(root):
+def is_symetric(root):
     """Check whether Binary Tree it is a mirror of itself.
 
     Time complexity: O(h) == O(log(n)) where h is the height of the
