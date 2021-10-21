@@ -1,16 +1,10 @@
+import pytest
 from dsa.problems.symetric_tree import is_symmetric, TreeNode
 
 
-def test_is_symetric():
-    root = TreeNode(val=1)
-    n1 = TreeNode(val=2)
-    n2 = TreeNode(val=2)
-    root.left = n1
-    root.right = n2
-    n1.left = TreeNode(val=3)
-    n2.right = TreeNode(val=3)
-    n1.right = TreeNode(val=4)
-    n2.left = TreeNode(val=4)
-
-    assert is_symmetric(root)
-    assert not is_symmetric(n1)
+@pytest.mark.parametrize("recreate_binary_tree, expected", [
+    (([1, 2, 2, 3, 4, 4, 3], TreeNode), True),
+    (([1, 2, 2, None, 3, None, 3], TreeNode), False),
+], indirect=["recreate_binary_tree"])
+def test_is_symetric(recreate_binary_tree, expected):
+    assert is_symmetric(recreate_binary_tree) == expected
