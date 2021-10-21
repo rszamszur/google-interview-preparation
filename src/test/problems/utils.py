@@ -1,20 +1,15 @@
 from collections import deque
 
-import pytest
 
-
-@pytest.fixture(scope="function")
-def recreate_binary_tree(request):
-    input = request.param[0]
-    node_class = request.param[1]
-    root = node_class(val=input.pop(0))
+def recreate_binary_tree(array_data, node_class):
+    root = node_class(val=array_data.pop(0))
     queue = deque()
     queue.append(root)
 
-    while input:
+    while array_data:
         parent = queue.popleft()
-        left = input.pop(0)
-        right = input.pop(0)
+        left = array_data.pop(0)
+        right = array_data.pop(0) if array_data else None
 
         if left:
             parent.left = node_class(val=left)
@@ -23,4 +18,4 @@ def recreate_binary_tree(request):
             parent.right = node_class(val=right)
             queue.append(parent.right)
 
-    yield root
+    return root
