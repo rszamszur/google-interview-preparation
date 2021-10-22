@@ -23,8 +23,10 @@ Note! Work in progress. I'm constantly adding new notes, and code implementation
       - [Heap](https://github.com/rszamszur/google-interview-preparation/tree/master/2.Data_Structures/6.Heap.ipynb)
         - [Python](https://github.com/rszamszur/google-interview-preparation/blob/master/src/dsa/tree/heap.py)
       - BST (TBC)
-      - Red Black (TBC)
+        - [Python](https://github.com/rszamszur/google-interview-preparation/blob/master/src/dsa/tree/bst.py)
       - AVL (TBC)
+        - [Python](https://github.com/rszamszur/google-interview-preparation/blob/master/src/dsa/tree/avl.py)
+      - Red Black (TBC)
    7. Graphs: TBC
 3. Algorithms
    - [Python](https://github.com/rszamszur/google-interview-preparation/tree/master/src/dsa/algorithms)
@@ -44,6 +46,8 @@ Note! Work in progress. I'm constantly adding new notes, and code implementation
 - [Visualize Python code execution](https://pythontutor.com/)
 - [C for python programmers](https://realpython.com/c-for-python-programmers/)
 - [interactive-coding-challenges](https://github.com/donnemartin/interactive-coding-challenges)
+- [Algorithm Grading Rubric](https://docs.google.com/spreadsheets/d/1gy9cmPwNhZvola7kqnfY3DElk7PYrz2ARpaCODTp8Go/edit#gid=0)
+- [Anonymous technical mock interviews with engineers from FAANG](https://interviewing.io/)
 
 ## How to study effectively
 
