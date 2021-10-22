@@ -7,11 +7,7 @@ class AVL(BST):
         super().__init__()
 
     def _update_height(self, node):
-        setattr(
-            node,
-            "height",
-            max(self.height(node.left), self.height(node.right)) + 1
-        )
+        node.height = max(self.height(node.left), self.height(node.right)) + 1
 
     def _left_rotate(self, x):
         y = x.right
