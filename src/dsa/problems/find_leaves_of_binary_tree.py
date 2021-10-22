@@ -65,7 +65,7 @@ def postorder(node):
 def find_leaves_with_height(root):
     """Better implementation using height.
 
-    Time complexity: O(n*log(n))
+    Time complexity: O(?) O(n) or O(n*log(n))
     Space complexity: O(n)
 
     Given the root of a binary tree, collect a tree's nodes as if you were
