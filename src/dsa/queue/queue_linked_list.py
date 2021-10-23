@@ -1,4 +1,4 @@
-from dsa.linkedlist.node import Node
+from dsa.linkedlist.node import SinglyNode
 
 
 class LinkedListQueue(object):
@@ -37,7 +37,7 @@ class LinkedListQueue(object):
 
     def enqueue(self, value):
         """Add an item to the queue. Complexity: O(1)"""
-        node = Node(value)
+        node = SinglyNode(value)
         if self._tail:
             self._tail.next = node
 

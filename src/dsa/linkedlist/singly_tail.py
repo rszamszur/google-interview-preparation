@@ -1,4 +1,4 @@
-from .node import Node
+from .node import SinglyNode
 
 
 class SinglyTailLinkedList(object):
@@ -33,7 +33,7 @@ class SinglyTailLinkedList(object):
 
     def push_front(self, value):
         """Insert item at the head of the list. Complexity: O(1)"""
-        node = Node(value)
+        node = SinglyNode(value)
         node.next = self._head
         self._head = node
         if not self._tail:
@@ -57,7 +57,7 @@ class SinglyTailLinkedList(object):
 
     def push_back(self, value):
         """Insert item at the end of the list. Complexity: O(1)"""
-        node = Node(value)
+        node = SinglyNode(value)
         if self._tail:
             self._tail.next = node
 

@@ -1,16 +1,4 @@
-from .node import Node
-
-
-class DoublyNode(Node):
-    """Node class implementation for double linked list."""
-    # Why slots: https://docs.python.org/3/reference/datamodel.html#slots
-    # TLDR: 1. faster attribute access. 2. space savings in memory.
-    __slots__ = ("prev")
-
-    def __init__(self, value):
-        """Initialize DoublyNode class object instance."""
-        super().__init__(value)
-        self.prev = None
+from .node import DoublyNode
 
 
 class DoublyLinkedList(object):

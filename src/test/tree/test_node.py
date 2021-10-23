@@ -1,17 +1,4 @@
-from dsa.tree.node import (TreeNode, BinaryTreeNode, GeneralTreeNode)
-
-
-def test_tree_node():
-    node = TreeNode(kwarg1="test", kwarg2=2, name="TreeNode", obj=TreeNode())
-    assert node.kwarg1 == "test"
-    assert node.kwarg2 == 2
-    assert node.name == "TreeNode"
-    assert isinstance(node.obj, TreeNode)
-    node_eval = eval(repr(node))
-    assert node.kwarg1 == node_eval.kwarg1
-    assert node.kwarg2 == node_eval.kwarg2
-    assert node.name == node_eval.name
-    assert isinstance(node.obj, TreeNode) == isinstance(node_eval.obj, TreeNode)
+from dsa.tree.node import (BinaryTreeNode, GeneralTreeNode)
 
 
 def test_binary_tree_node():
@@ -21,21 +8,21 @@ def test_binary_tree_node():
         kwarg1="test",
         kwarg2=2,
         name="BinaryTreeNode",
-        obj=TreeNode()
+        obj=BinaryTreeNode()
     )
     assert node.left == 0
     assert node.right == 1
     assert node.kwarg1 == "test"
     assert node.kwarg2 == 2
     assert node.name == "BinaryTreeNode"
-    assert isinstance(node.obj, TreeNode)
+    assert isinstance(node.obj, BinaryTreeNode)
     node_eval = eval(repr(node))
     assert node.left == node_eval.left
     assert node.right == node_eval.right
     assert node.kwarg1 == node_eval.kwarg1
     assert node.kwarg2 == node_eval.kwarg2
     assert node.name == node_eval.name
-    assert isinstance(node.obj, TreeNode) == isinstance(node_eval.obj, TreeNode)
+    assert isinstance(node.obj, BinaryTreeNode) == isinstance(node_eval.obj, BinaryTreeNode)
 
 
 def test_general_tree_node():
@@ -44,19 +31,19 @@ def test_general_tree_node():
         children=[],
         kwarg1="test",
         kwarg2=2,
-        name="BinaryTreeNode",
-        obj=TreeNode()
+        name="GeneralTreeNode",
+        obj=GeneralTreeNode()
     )
     assert node.parent == 0
     assert node.children == []
     assert node.kwarg1 == "test"
     assert node.kwarg2 == 2
-    assert node.name == "BinaryTreeNode"
-    assert isinstance(node.obj, TreeNode)
+    assert node.name == "GeneralTreeNode"
+    assert isinstance(node.obj, GeneralTreeNode)
     node_eval = eval(repr(node))
     assert node.parent == node_eval.parent
     assert node.children == node_eval.children
     assert node.kwarg1 == node_eval.kwarg1
     assert node.kwarg2 == node_eval.kwarg2
     assert node.name == node_eval.name
-    assert isinstance(node.obj, TreeNode) == isinstance(node_eval.obj, TreeNode)
+    assert isinstance(node.obj, GeneralTreeNode) == isinstance(node_eval.obj, GeneralTreeNode)

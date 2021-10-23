@@ -1,4 +1,4 @@
-from dsa.linkedlist.node import Node
+from dsa.linkedlist.node import SinglyNode
 
 
 class LinkedListStack(object):
@@ -36,7 +36,7 @@ class LinkedListStack(object):
 
     def push(self, value):
         """Insert item at the top of the stack. Complexity: O(1)"""
-        node = Node(value)
+        node = SinglyNode(value)
         node.next = self._top
         self._top = node
 

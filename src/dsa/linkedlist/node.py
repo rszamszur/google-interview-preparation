@@ -1,14 +1,12 @@
-from reprlib import recursive_repr
+from dsa.generic import Node
 
 
-class Node(object):
-    """Node class implementation for linked list."""
-    # Why slots: https://docs.python.org/3/reference/datamodel.html#slots
-    # TLDR: 1. faster attribute access. 2. space savings in memory.
-    __slots__ = ("value", "next")
+class SinglyNode(Node):
+    """SinglyNode class implementation for singly linkedlist data structure."""
 
-    def __init__(self, value, next=None):
-        """Initialize Node class object instance."""
+    def __init__(self, value, next=None, **kwargs):
+        """Initialize LinkedListNode class object instance."""
+        super().__init__(**kwargs)
         self.value = value
         self.next = next
 
@@ -16,11 +14,17 @@ class Node(object):
         """Node class __str__ method."""
         return str(self.value)
 
-    @recursive_repr()
-    def __repr__(self):
-        """Node class __repr__ method."""
-        return "{name}({value})".format(
-            name=self.__class__.__name__,
-            value=self.value,
-            next=repr(self.next)
-        )
+
+class DoublyNode(Node):
+    """DoublyNode class implementation for doubly linkedlist data structure."""
+
+    def __init__(self, value, next=None, prev=None, **kwargs):
+        """Initialize LinkedListNode class object instance."""
+        super().__init__(**kwargs)
+        self.value = value
+        self.next = next
+        self.prev = prev
+
+    def __str__(self):
+        """Node class __str__ method."""
+        return str(self.value)
