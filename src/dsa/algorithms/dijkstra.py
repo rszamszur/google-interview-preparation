@@ -46,9 +46,7 @@ def dijkstra(graph, start, end):
             return cost
 
         for v, c in graph[u]:
-            if v in visited:
-                continue
-
-            heapq.heappush(heap, (cost + c, v))
+            if v not in visited:
+                heapq.heappush(heap, (cost + c, v))
 
     return None
