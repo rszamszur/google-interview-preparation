@@ -10,7 +10,7 @@ def word_search(board, word):
 
     Args:
         board(List[List[str]]): m x n grid of characters.
-        word(str):
+        word(str): Word to find in the grid.
 
     Returns:
         True if word exists in the grid.
@@ -20,7 +20,7 @@ def word_search(board, word):
         if word[0] not in row:
             continue
 
-        for n, value in enumerate(board[m]):
+        for n, value in enumerate(row):
             if value == word[0]:
                 stack = [(m, n, 1, set())]
 
