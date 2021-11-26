@@ -23,14 +23,13 @@ def binary_search(array, query):
     while lo <= hi:
         mid = (hi + lo) // 2
         value = array[mid]
+
         if query == value:
             return mid
         elif query > value:
             lo = mid + 1
-            continue
         else:
             hi = mid - 1
-            continue
 
     return None
 
