@@ -2,7 +2,7 @@
 
 
 def bubble_sort(array):
-    """Boubble sort algorithm implementation.
+    """Bubble sort algorithm implementation.
 
     Time complexity: O(n^2)
     Space complexity: O(1)
