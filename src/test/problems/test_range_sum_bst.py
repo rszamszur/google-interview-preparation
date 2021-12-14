@@ -9,4 +9,4 @@ from .utils import recreate_binary_tree
 ])
 def test_range_sum_bst(tree_data, low, high, expected):
     root = recreate_binary_tree(tree_data, TreeNode)
-    result = range_sum_bst(root, low, high,)
+    assert range_sum_bst(root, low, high) == expected
