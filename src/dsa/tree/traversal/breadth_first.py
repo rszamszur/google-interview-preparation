@@ -6,8 +6,8 @@ class BreadthFirstBinaryTree(AbstractTreeIterator):
     """Breadth First Tree iterator class for binary tree."""
 
     def __init__(self, node):
-       """Initialize BreadthFirstBinaryTree class object instance."""
-       super().__init__(node)
+        """Initialize BreadthFirstBinaryTree class object instance."""
+        super().__init__(node)
 
     def _order(self, node):
         """Return breadth first nodes for the iterator."""
