@@ -18,7 +18,7 @@ def insertion_sort(array):
         val = array[i]
         j = i - 1
 
-        while j >=0 and val < array[j]:
+        while j >= 0 and val < array[j]:
             array[j + 1] = array[j]
             j -= 1
 
