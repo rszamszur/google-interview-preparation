@@ -1,28 +1,23 @@
-#! /usr/bin/env python
 from collections.abc import Set
+from dsa.linkedlist.node import Node
 
 
-class HashTableNode(object):
+class HashTableNode(Node):
     """HashTableNode class implementation for chaining."""
     # Why slots: https://docs.python.org/3/reference/datamodel.html#slots
     # TLDR: 1. faster attribute access. 2. space savings in memory.
-    __slots__ = ("value", "key", "next")
+    __slots__ = ("key")
 
     def __init__(self, key, value):
-        """Initialize Node class object instance."""
+        """Initialize HashTableNode class object instance."""
+        super.__init__(value)
         self.key = key
-        self.value = value
-        self.next = None
-
-    def __str__(self):
-        """Node class __str__ method."""
-        return str(self.value)
 
     def __repr__(self):
         """Node class __repr__ method."""
-        return "Node(key={key}, value={value})".format(
-            value=self.value,
-            key=self.key,
+        return "{name}({value})".format(
+            name=self.__class__.__name__,
+            value=self.value
         )
 
 
