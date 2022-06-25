@@ -5,7 +5,7 @@ import heapq
 def furthest_building(heights, bricks, ladders):
     """
     Time complexity: O(n*log(n))
-    Space complexityL O(n)
+    Space complexity: O(n)
 
     Args:
         heights (List[int]): Given array heights representing the heights of
