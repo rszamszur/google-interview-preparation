@@ -1,8 +1,6 @@
-from collections import deque
-
 import pytest
 from dsa.problems.serialize_and_deserialize_binary_tree import Codec, TreeNode
-from .utils import recreate_binary_tree
+from .utils import recreate_binary_tree, assert_trees_equal
 
 
 @pytest.mark.parametrize("tree_data", [
@@ -16,15 +14,4 @@ def test_serialize_and_deserialize_binary_tree(tree_data):
     serialized = codec.serialize(root)
     deserialized = codec.deserialize(serialized)
 
-    queue = deque()
-    queue.append((root, deserialized))
-
-    while queue:
-        a, b = queue.popleft()
-        assert a.val == b.val
-
-        if a.left:
-            queue.append((a.left, b.left))
-
-        if a.right:
-            queue.append((a.right, b.right))
+    assert_trees_equal(root, deserialized)
